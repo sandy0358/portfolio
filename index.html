@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandip Sonawane | Web Developer & Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+        <div class="loader-text">Loading...</div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-text">Portfolio<span class="logo-dot"></span></span>
+            </a>
+            
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <span class="nav-text">About</span>
+                </a>
+                <a href="#portfolio" class="nav-link">
+                    <span class="nav-text">Portfolio</span>
+                </a>
+                <a href="#services" class="nav-link">
+                    <span class="nav-text">Services</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span class="nav-text">Contact</span>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Sandip Sonawane</h1>
+            <p class="animate-text-delay">Creative Web Developer & Designer</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="hero-btn hire-me">
+                    <i class="fas fa-briefcase"></i> Hire Me
+                </a>
+                <a href="#portfolio" class="hero-btn download-cv">
+                    <i class="fas fa-eye"></i> View Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="assets/images/portfolio/profiles.png" alt="Profile Picture">
+                        <div class="star-bubble"></div><center>
+                            <h1 class="rainbow-text">Sandip Sonawane</h1>
+                            <p></p>
+                            <h2 class="rainbow-text">Creative Web Developer & Designer</h2>
+                        </center>
+                        <div class="star-bubble"></div>
+                        <div class="star-bubble"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="rainbow-text">About Me</h2>
+                    <p>I am a passionate web developer with expertise in creating modern and responsive websites. With a strong foundation in front-end development and a keen eye for design, I strive to build engaging digital experiences that make a difference.</p>
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML5 & CSS3</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React.js</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Photoshop</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Illustrator</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 >My Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Web Development Projects -->
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://picsum.photos/400/300?random=1" alt="E-commerce Website">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Platform</h3>
+                        <p>A full-stack e-commerce solution with modern UI and secure payment integration</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://picsum.photos/400/300?random=2" alt="Portfolio Website">
+                    <div class="portfolio-overlay">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio website with modern animations and dark mode</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <!-- App Development Projects -->
+                <div class="portfolio-item" data-category="app">
+                    <img src="https://picsum.photos/400/300?random=3" alt="Fitness App">
+                    <div class="portfolio-overlay">
+                        <h3>Fitness Tracker App</h3>
+                        <p>Mobile application for tracking workouts and nutrition</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="app">
+                    <img src="https://picsum.photos/400/300?random=4" alt="Task Manager App">
+                    <div class="portfolio-overlay">
+                        <h3>Task Manager</h3>
+                        <p>A productivity app with task management and reminders</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design Projects -->
+                <div class="portfolio-item" data-category="design">
+                    <img src="https://picsum.photos/400/300?random=5" alt="Banking App Design">
+                    <div class="portfolio-overlay">
+                        <h3>Banking App UI</h3>
+                        <p>Modern UI/UX design for a mobile banking application</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <img src="https://picsum.photos/400/300?random=6" alt="Social Media App Design">
+                    <div class="portfolio-overlay">
+                        <h3>Social Media App</h3>
+                        <p>User interface design for a social networking platform</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services">
+            <h2 class="rainbow-text">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Creative designs for branding, marketing materials, and digital assets.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Networking & H/W Supporting</h3>
+                    <p>Professional network setup, maintenance, and hardware support services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What My Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Sandip's web development skills are exceptional! His practical approach and attention to detail helped create exactly what I needed. The support was outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="Client 1">
+                        <div class="author-info">
+                            <h4>Rahul Sharma</h4>
+                            <p>Tech Solutions</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The design work exceeded my expectations. Sandip's expertise in modern tools and his ability to explain complex concepts made the process smooth and effective."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=2" alt="Client 2">
+                        <div class="author-info">
+                            <h4>Priya Patel</h4>
+                            <p>Creative Studio</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"As a business owner, I needed a professional website. Sandip delivered a beautiful design and implemented all the features I needed. His expertise helped set up our digital presence efficiently."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=3" alt="Client 3">
+                        <div class="author-info">
+                            <h4>Amit Kumar</h4>
+                            <p>Digital Solutions</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="rainbow-text">Get in Touch</h2>
+            <div class="contact-content rainbow-border-effect">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="social-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="www.linkedin.com/in/sandip-sonawane-s358a0mom007" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sandy0358" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Created with <span class="pulse-effect">❤️</span> by <span class="rainbow-text">Sandip Sonawane</span> | &copy; 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
